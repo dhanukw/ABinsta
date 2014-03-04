@@ -40,10 +40,8 @@ exports.events_source5 = function(req, res) {
 };
 
 exports.multi_source = function(req, res){
-	console.log(req.params.event_id);
 	switch(req.params.event_id) {
 		case 'brian1':
-			console.log(databrian1.brian1);
 			res.send(databrian1.brian1);
 			break;
 		case 'brian2':
