@@ -110,9 +110,9 @@
                 element.attr('href', '#');
             },
             eventClick: function(calEvent, jsEvent, view) {
-               alert('Event: '+calEvent.title+'\n\n'+'Start Time: '+calEvent.start+'\n\n'+'End Time: '+calEvent.end+'\n\n'+'Notes: ' +calEvent.notes);
-           }
 
+               window.open('event', calEvent);
+           }
        });
     }
     </script>

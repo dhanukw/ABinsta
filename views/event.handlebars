@@ -8,51 +8,24 @@
         </head>
         <body>
  
+
             <div class = "navbar navbar-default navbar-static-top">
                 <div class = "container">
                                
                     <a href = "index" class = "navbar-brand">instaCal</a>
                                
-                        <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
-                            <span class = "icon-bar"></span>
-                            <span class = "icon-bar"></span>
-                            <span class = "icon-bar"></span>
-                        </button>
-                               
-                        <div class = "collapse navbar-collapse navHeaderCollapse">
-                               
-                            <ul class = "nav navbar-nav navbar-right">
-                                       
-                                <li><a href = "index">Feed</a></li>
-                                <li><a href = "friends">Friends</a></li>
-                                <li><a href = "profile">Profile</a></li>
-                                <li><a href = "calendar">My Calendar</a></li>
-                                <li><a href = "notifi">Notifications</a></li>
-                                <li><a href = "settings">Settings</a></li>
-                                <li><a href = "welcome">Sign out</a></li>
+                </div>
+            </div>
 
-                            </ul>
-                               
-                        </div>
-                               
-                </div>
-            </div>
-            <div class = "container">
-                <h5>Event Name</h5>
-               
-                <button type="edit" class="btn btn-default">Edit</button>
-                <p></p>
-            </div>
-               
             <div class = "container" style="margin-bottom:75px">
-                {{#each friends}}
-                <div class= "friends">
-                    <h3><a href="{{profileURL}}" class="namelisten">{{name}}</h3></a>
-                    <label for="persondescription">{{description}}</label>
-                    <label for="sharefilter">You can see {{name}}'s {{Filters}} filters.</label>
+                <div class= "event">
+                    <h3>{{title}}</h3>
+                    <label for="start">Event starts:{{start}}</label>
+                    <p></p>
+                    <label for="end">Event ends:{{end}}</label>
                     <hr></hr>
+                    <label for="notes">Description/Notes:{{notes}}</label>
                 </div>
-                {{/each}}
             </div>
 
 
@@ -71,9 +44,6 @@
 <div class = "navbar navbar-inverse navbar-static-bottom"> 
     <div class = "container">
         <p class = "navbar-text pull-left">&copy;2014 instaCal</p>
-
-        <p class = "navbar-text pull-right"><a href = "contactus"> | Contact </a></p>
-        <p class = "navbar-text pull-right"><a href = "about"> About | </a></p>
     </div> 
 </div>
 </footer>
