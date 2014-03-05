@@ -19,38 +19,57 @@
             </div>
 
             <div class = "container" style="margin-bottom:75px">
-                <label for="examplefilter">Filter Name</label>
-                <input type="FilterName" class="form-control" placeholder="Filter Name" required autofocus>
-                <p></p>
-                <label for="examplePrivacy">Privacy</label>
-                <select input type="text" class="form-control" placeholder="Month">
-                    <option>Public</option>
-                    <option>Friends</option>
-                    <option>Following</option>
-                    <option>Select Friends</option>
-                </select>
-                <p></p>
-                <label for="SelectFriends">Select Friends</label>
-                <select input type="text" class="form-control" placeholder="Month">
-                    <option>Grant</option>
-                    <option>Brian</option>
-                    <option>Following</option>
-                    <option>Select Friends</option>
-                </select>
-                <p></p>
-                <div class="row" style= "margin-top:30px" >
-                    <div class="col-xs-6">
-                        <p><a class="btn btn-lg btn-success" href="profile" role="button">Create Filter</a></p>
-                    </div>
-                    <div class="col-xs- 5">
-                        <p><a class="btn btn-lg btn-danger" href="profile" role="button">Cancel</a></p>
-                    </div>
+                <form name = "filterform">
+                    <label for="examplefilter">Filter Name</label>
+                    <input type="FilterName" class="form-control" placeholder="Filter Name" required autofocus>
+                    <p></p>
+                    <label for="examplePrivacy">Privacy</label>
+                    <select name = "friend_drop" type="text" class="form-control" placeholder="Privacy" onchange = "validate();">
+                        <option value = "1">Public</option>
+                        <option value = "1">Friends</option>
+                        <option value = "1">Following</option>
+                        <option value = "2">Select Friends</option>
+                    </select>
+                    <p></p>
 
-                 
+
+                    <label for="SelectFriends">Select Friends</label>
+                    <select type="text" class="form-control" placeholder="Month" name="friend_select">
+                        <option>Grant</option>
+                        <option>Brian</option>
+                        <option>Following</option>
+                        <option>Select Friends</option>
+                    </select>
+                    <p></p>
+
+                    <script = "text/javascript">
+
+                function validate() {
+                    if(document.filterform.friend_drop.value == "1"){
+                        document.filterform.friend_select.disabled = true;
+                    }
+                    else {
+                        document.filterform.friend_select.disabled = false;
+                    }
+                }
+            </script>
+
+                </form>
+                    <div class="row" style= "margin-top:30px" >
+                        <div class="col-xs-6">
+                            <p><a class="btn btn-lg btn-success" href="profile" role="button">Create Filter</a></p>
+                        </div>
+                        <div class="col-xs- 5">
+                            <p><a class="btn btn-lg btn-danger" href="profile" role="button">Cancel</a></p>
+                        </div>
+
+                     
+                    </div>
+                   
                 </div>
-               
-            </div>
 
+            
+                
             <script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
             <script src = "js/bootstrap.js"></script>
                
@@ -64,7 +83,7 @@
                     <a href = "index" class = "btn btn-primary">Feed</a>
                  </div>
                   <div class="btn-group">
-                    <a href = "profile" class = "btn btn-default">Profile</a>
+                    <a href = "profile" class = "btn btn-primary">Profile</a>
                   </div>
                   <div class="btn-group">
                     <a href = "friends" class = "btn btn-primary">Friends</a>
