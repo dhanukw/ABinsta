@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
         <head>
-                <title>instaCal - Settings </title>
+                <title>instaCal - Change Password </title>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <link href = "css/bootstrap.min.css" rel = "stylesheet">
                 <link href = "css/styles.css" rel = "stylesheet">
@@ -17,22 +17,18 @@
             </div>
             
                  <div class="container" style="margin-bottom:25px">
-                  <div class="jumbotron" align="center">
-  
-
-                    <h3>Settings</h3>
-
+                    <h4>Settings</h4>
+                    <label for="Oldpsswd">Current Password</label>
+                    <input type="password" class="form-control" placeholder="Current Password" required>
+                    <label for="newpsswd">New Password</label>
+                    <input type="password" class="form-control" placeholder="New Password" required>
+                    <label for="newpsswdconfirm">Confirm New Password</label>
+                    <input type="password" class="form-control" placeholder="New Password" required>
                     <p></p>
-                    <p><a href = "psswdreset" >Change Password</a></p>
-                    <p><a href = "aboutsignedin" >About </a></p>
-                    <p><a href = "contactusin" >Contact Us</a></p>
-                    <p></p>
-                  
+                    <a href = "settings" class = "btn btn-lg btn-success btn-block" >Update</a>
+                    <a href = "settings" class = "btn btn-lg btn-info btn-block" >Cancel</a>
                 </div>
-                </div>
-                <div class = "container" align="center" style="margin-bottom:20px">
-                <a class="btn btn-danger btn-lg  " href="welcome" role="button">Log Out</a>
-                </div>
+                
 
 
             <script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

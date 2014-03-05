@@ -34,6 +34,7 @@ app.get('/welcome', index.welcome);
 app.get('/signin', index.signin);
 app.get('/signup', index.signup);
 
+
 app.get('/calendar', index.calendar);
 app.get('/melissacalendar', index.melissacalendar);
 app.get('/grantcalendar', index.grantcalendar);
@@ -65,8 +66,9 @@ app.post('/eventsuccess', calendar.eventsuccess);
 app.post('/signinattempt', profile.signinattempt);
 app.get('/multi_source/:event_id', events.multi_source);
 app.get('/event', index.event);
-
-
+app.get('/psswdreset', index.psswdreset);
+app.get('/aboutsignedin', index.aboutsignedin);
+app.get('/contactusin', index.contactusin);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

@@ -95,3 +95,14 @@ exports.profile = function(req, res){
 exports.event = function(req, res){
 	res.render('event');
 };
+exports.psswdreset = function(req, res){
+	res.render('psswdreset');
+};
+
+exports.aboutsignedin = function(req, res){
+	res.render('aboutsignedin');
+};
+
+exports.contactusin = function(req, res){
+	res.render('contactusin');
+};

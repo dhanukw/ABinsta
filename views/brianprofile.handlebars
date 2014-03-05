@@ -33,9 +33,23 @@
             </div>
             <div style="margin-top: 10px"> 
 
-                <p align="left"><button type="button pull-left" id="loading-example-btn" data-loading-text="Loading..." class="btn btn-default"> Friends
-                </button>
+                <p>
 
+              <input align="left" type="button pull-left" value="Friends" onclick="return change(this);" class="btn btn-success" />
+
+                <script type="text/javascript">
+                function change( el )
+                {
+                    if ( el.value === "Friends" ){
+                        el.value = "Add Friend";
+                        el.class ="btn btn-default";
+                    }
+                    else{
+                        el.value = "Friends";
+                        el.class ="btn btn-success";
+                    }
+                }
+                </script>
                 <a class="btn btn-warning btn-lg btn-sm pull-right" href="briancalendar" role="button">Brian's Calendar</a>
             </p>
         </div>
