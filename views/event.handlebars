@@ -41,44 +41,25 @@
         </div>
 
 
-        <script>
-        var fol = false;
-        $('#loading-example-btn').click(function () {
-            var btn = $(this);
-            if(fol === false){
-            btn.text('Following');
-            fol = true;
-            }
-            else{
-                btn.text('Follow');
-                fol = false;
-            }
-            //$.ajax(...).always(function () {
-            //    btn.button('reset')});
-        });
-        </script>
 
 
 
 
+        <script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src = "js/bootstrap.js"></script>
 
-			
+    </body>
 
-            <script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-            <script src = "js/bootstrap.js"></script>
-               
-        </body>
+    <div class='element'> 
 
-<div class = 'container' align='center'> 
+        <button type="button" id="close-window-btn" data-loading-text="Loading..." class="btn btn-danger close-window-btn"> Close
+        </button>
+    </div>
 
-                <button type="button" id="close-window-btn" data-loading-text="Loading..." class="btn btn-danger close-window-btn"> Close
-                </button>
-        </div>
-
-  <script>
-        $('#close-window-btn').click(function () {
-                close();
-        });
+    <script>
+    $('#close-window-btn').click(function () {
+        close();
+    });
     </script>
 
 
