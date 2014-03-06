@@ -3,8 +3,8 @@
         <head>
                 <title>instaCal Event </title>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <link href = "css/bootstrap.min.css" rel = "stylesheet">
-                <link href = "css/styles.css" rel = "stylesheet">
+                <link href = "/css/bootstrap.min.css" rel = "stylesheet">
+                <link href = "/css/styles.css" rel = "stylesheet">
         </head>
         <body>
  
@@ -26,8 +26,37 @@
                     <hr></hr>
                     <label for="notes">Description/Notes:{{notes}}</label>
                 </div>
-            </div>
 
+
+                
+<div class = "container" style="margin-top: 10px"> 
+
+                <p><a href = "index" class = "btn btn-info pull-left">Edit</a>
+
+                <a href = "index" role="button" class = "btn btn-danger pull-right">Delete</a>
+            
+
+            
+            </p>
+        </div>
+
+
+        <script>
+        var fol = false;
+        $('#loading-example-btn').click(function () {
+            var btn = $(this);
+            if(fol === false){
+            btn.text('Following');
+            fol = true;
+            }
+            else{
+                btn.text('Follow');
+                fol = false;
+            }
+            //$.ajax(...).always(function () {
+            //    btn.button('reset')});
+        });
+        </script>
 
 
 
@@ -41,11 +70,24 @@
         </body>
 
 <footer>
-<div class = "navbar navbar-inverse navbar-static-bottom"> 
-    <div class = "container">
-        <p class = "navbar-text pull-left">&copy;2014 instaCal</p>
-    </div> 
-</div>
+    <div class="footer navbar-fixed-bottom" style="margin-top:1005px">
+        <div class="container">
+            <div class="btn-group btn-group-justified">
+                 <div class="btn-group">
+                    <a href = "index" class = "btn btn-primary">Feed</a>
+                 </div>
+                  <div class="btn-group">
+                    <a href = "profile" class = "btn btn-default">Profile</a>
+                  </div>
+                  <div class="btn-group">
+                    <a href = "friends" class = "btn btn-primary">Friends</a>
+                  </div>
+                  <div class="btn-group">
+                    <a href = "settings" class = "btn btn-primary">Settings</a>
+                  </div>
+                </div>
+        </div>
+    </div>
 </footer>
 
 

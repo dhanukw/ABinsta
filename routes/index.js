@@ -93,6 +93,7 @@ exports.profile = function(req, res){
 };
 
 exports.event = function(req, res){
+	console.log("params of event_title" + req.params['event_title']);
 	res.render('event');
 };
 exports.psswdreset = function(req, res){
