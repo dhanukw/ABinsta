@@ -9,3 +9,10 @@
     height:auto;
     overflow:hidden;
 }
+
+    .close-window-btn{
+        width: 90%;
+        height: 45px;
+        position:absolute;
+		bottom:5%;
+    }
