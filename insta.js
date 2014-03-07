@@ -54,9 +54,16 @@ app.get('/notifi', index.notifi);
 app.get('/notfollowing', index.notfollowing);
 app.get('/brianprofile', profile.brianprofile);
 app.get('/brianprofile1', profile.brianprofile1);
-app.get('/event1', index.event1);
-app.get('/event2', index.event2);
-app.get('/event3', index.event3);
+
+
+app.get('/eventB1', index.event1);
+app.get('/eventB2', index.event2);
+app.get('/eventB3', index.event3);
+
+
+app.get('/eventM1', index.event4);
+app.get('/eventM2', index.event5);
+app.get('/eventM3', index.event6);
 
 app.get('/grantprofile', profile.grantprofile);
 app.get('/snoopprofile', profile.snoopprofile);

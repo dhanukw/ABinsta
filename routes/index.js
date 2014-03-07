@@ -123,16 +123,28 @@ exports.contactusin = function(req, res){
 
 
 exports.event1 = function (req, res) {
-	res.render('event1');
+	res.render('eventB1');
 };
 
 
 
 exports.event2 = function (req, res) {
-	res.render('event2');
+	res.render('eventB2');
 };
 
 
 exports.event3 = function (req, res) {
-	res.render('event3');
+	res.render('eventB3');
+};
+
+exports.event4 = function (req, res) {
+	res.render('eventM1');
+};
+
+exports.event5 = function (req, res) {
+	res.render('eventM2');
+};
+
+exports.event6 = function (req, res) {
+	res.render('eventM3');
 };
