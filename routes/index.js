@@ -107,3 +107,19 @@ exports.aboutsignedin = function(req, res){
 exports.contactusin = function(req, res){
 	res.render('contactusin');
 };
+
+
+exports.event1 = function (req, res) {
+	res.render('event1');
+};
+
+
+
+exports.event2 = function (req, res) {
+	res.render('event2');
+};
+
+
+exports.event3 = function (req, res) {
+	res.render('event3');
+};

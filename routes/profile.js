@@ -9,6 +9,10 @@ exports.grantprofile = function(req, res){
 exports.brianprofile = function(req, res){
 	res.render('brianprofile');
 };
+exports.brianprofile1 = function(req, res){
+	res.render('brianprofile1');
+};
+
 
 exports.snoopprofile = function(req, res){
 	res.render('snoopprofile');
