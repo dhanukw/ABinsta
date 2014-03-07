@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>instaCal </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "css/bootstrap.min.css" rel = "stylesheet">
+    <link href = "css/styles.css" rel = "stylesheet">
+</head>
+<body>
+
+    <div class = "navbar navbar-default navbar-static-top">
+        <div class = "container">
+
+            <a href = "index" class = "navbar-brand">instaCal</a>
+        </div>
+    </div>
+
+
+<div class = "container">
+        <div class = "jumbotron text-center">
+          <table width="100%" border="0" align="center">
+            <tr>
+                <td width="43%"><img src="https://scontent-a-pao.xx.fbcdn.net/hphotos-ash2/t1/1001296_4304329546053_621296507_n.jpg" width="175" height="145" class="img-thumbnail imageClip"  ></td>
+                <td width="57%"><h3>Brian Clark</h3>
+                <h5>Bio: Hahaha what, bio? Naa, I'm CS</h5></td>
+              </tr>
+            </table>
+             <p>
+              <input align="left" type="button pull-left" value="Friends" onclick="return change(this);" class="btn btn-sm btn-success" />
+
+             
+
+                <script type="text/javascript">
+                function change( el )
+                {
+                    if ( el.value === "Friends" ){
+                        el.value = "Add Friend";
+                        el.class ="btn btn-default";
+                    }
+                    else{
+                        el.value = "Friends";
+                        el.class ="btn btn-success";
+                    }
+                }
+                </script>
+                <a class="btn btn-warning btn pull-right" href="briancalendar" role="button">Brian's Calendar</a>
+            </p>
+          <div style="margin-top: 10px">            </div>
+  </div>
+
+</div>
+
+<div class = "container" style="margin-bottom: 100px">
+<!-- Nav tabs -->
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#comingup" data-toggle="tab">Coming Up</a></li>
+  <li><a href="#recent" data-toggle="tab">Recent</a></li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane active" id="comingup">
+    <div class = "container" >
+
+            <h5>Fri, 21 Feb 2014</h5>
+            <p><a href = "event1">Hang out with Dhanuk </a></p>
+            <p><a href = "event2">Suite Bonfire on Sun </a></p>
+
+            <h5>Fri, 27 Feb 2014</h5>
+            <p><a href = "event3">Hearthstone Club Meeting </a></p>
+       
+           
+</div>
+
+
+  </div>
+  <div class="tab-pane" id="recent">
+
+
+            <h5>Cogs Group Goes Clubbing on Fri, 28 Feb 2014</h5>
+            <p> notes: "Time to meet the ladies"</p>
+     
+            <h5>lab on 20/02/2014 </h5>
+            <p> notes : "Fun.."</p>
+     
+            <h5>Hang out with Grant on 2014-02-12 </h5>
+            <p> notes: "Gotta make sure not to be late"</p>
+
+
+    </div>
+</div>
+<script type="text/javascript">
+$('#myTab Recent').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+
+</script>
+
+
+</div>
+
+
+
+
+    <div style="margin-top: 10px"> </div>
+  </div>
+</div>
+</body>
+<footer>
+    <div class="footer navbar-fixed-bottom">
+        <div class="container">
+            <div class="btn-group btn-group-justified">
+                 <div class="btn-group">
+                    <a href = "index" class = "btn btn-primary">Feed</a>
+                 </div>
+                  <div class="btn-group">
+                    <a href = "profile" class = "btn btn-primary">Profile</a>
+                  </div>
+                  <div class="btn-group">
+                    <a href = "friends" class = "btn btn-primary">Friends</a>
+                  </div>
+                  <div class="btn-group">
+                    <a href = "settings" class = "btn btn-primary">Settings</a>
+                  </div>
+                </div>
+        </div>
+    </div>
+</footer>
+</html>
