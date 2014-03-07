@@ -7,6 +7,7 @@ var events = require('./routes/events')
 
 var index = require('./routes/index');
 var profile = require('./routes/profile');
+var signin = require('./routes/signin');
 var calendar = require('./routes/calendar');
 
 var app = express();
@@ -68,7 +69,7 @@ app.get('/events_source3', events.events_source3);
 app.get('/events_source4', events.events_source4);
 app.get('/events_source5', events.events_source5);
 app.post('/eventsuccess', calendar.eventsuccess);
-app.post('/signinattempt', profile.signinattempt);
+app.post('/authenticate', signin.authenticate);
 app.get('/multi_source/:event_id', events.multi_source);
 
 app.get('/event/:event_title', index.event);
