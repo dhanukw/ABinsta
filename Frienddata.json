@@ -35,6 +35,13 @@
 			"imageURL": "https://scontent-b-pao.xx.fbcdn.net/hphotos-ash3/t1/600667_10151020813466407_1427800364_n.jpg",
 			"Filters": "Touring",
 			"profileURL": "/imaginedragonsprofile"
+		},
+		{
+			"name": "Scott Klemmer",
+			"description": "God of HCI",
+			"imageURL": "http://news.stanford.edu/news/2006/february22/gifs/aklemmerCMYK.jpg",
+			"Filters": "CSE 170",
+			"profileURL": "/scottprofile"
 		}
 	]
 }
