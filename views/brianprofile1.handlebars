@@ -52,15 +52,20 @@
 
 <div class = "container" style="margin-bottom: 100px">
 <!-- Nav tabs -->
-<ul class="nav nav-tabs">
-  <li class="active"><a href="#comingup" data-toggle="tab">Coming Up</a></li>
-  <li><a href="#recent" data-toggle="tab">Recent</a></li>
+<ul class="nav nav-tabs" id = "event_tab">
+  <li class="active">
+    <a href="#comingup" data-toggle="tab">Coming Up</a>
+  </li>
+
+  <li class>
+    <a href="#recent" data-toggle="tab">Recent</a>
+  </li>
+
 </ul>
 
 <!-- Tab panes -->
 <div class="tab-content">
   <div class="tab-pane active" id="comingup">
-    <div class = "container" >
 
             <h5>Fri, 21 March 2014</h5>
             <p><a href = "event1">Hang out with Dhanuk </a></p>
@@ -68,12 +73,7 @@
 
             <h5>Fri, 27 March 2014</h5>
             <p><a href = "event3">Hearthstone Club Meeting </a></p>
-       
-           
-</div>
 
-
-  </div>
   <div class="tab-pane" id="recent">
 
 
@@ -89,13 +89,10 @@
 
     </div>
 </div>
-<script type="text/javascript">
-$('#myTab Recent').click(function (e) {
-  e.preventDefault()
-  $(this).tab('show')
-})
+</div>
 
-</script>
+
+
 
 
 </div>
