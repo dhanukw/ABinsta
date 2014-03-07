@@ -93,9 +93,22 @@ exports.profile = function(req, res){
 };
 
 exports.event = function(req, res){
-	console.log("params of event_title" + req.params['event_title']);
-	res.render('event');
+	console.log("params of event_title " + req.params['event_title']);
+
+
+		var eventTitle = req.params['event_title'].title;
+		var eventStart = req.params['event_title'].start;
+		var eventEnd = req.params['event_title'].end;
+		var eventNotes = req.params['event_title'].notes;
+
+		res.render('event', {
+		'title': eventTitle,
+		'start' : eventStart,
+		'end': eventEnd,
+		'notes': eventNotes
+	});
 };
+
 exports.psswdreset = function(req, res){
 	res.render('psswdreset');
 };

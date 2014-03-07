@@ -70,7 +70,9 @@ app.get('/events_source5', events.events_source5);
 app.post('/eventsuccess', calendar.eventsuccess);
 app.post('/signinattempt', profile.signinattempt);
 app.get('/multi_source/:event_id', events.multi_source);
+
 app.get('/event/:event_title', index.event);
+
 app.get('/psswdreset', index.psswdreset);
 app.get('/aboutsignedin', index.aboutsignedin);
 app.get('/contactusin', index.contactusin);
