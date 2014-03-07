@@ -10,6 +10,14 @@
 <link href='css/fullcalendar.print.css' rel='stylesheet' media='print' />
 <script src='js/jquery.min.js'></script>
 <script src='js/jquery-ui.custom.min.js'></script>
+
+<div class = "navbar navbar-default navbar-static-top" role="navigation" style="margin-top:-40px">
+        <div class = "container">
+
+            <a href = "index" class = "navbar-brand">instaCal</a>
+        </div>
+    </div>
+    
 <script src='js/fullcalendar.min.js'></script>
 <script>
 
@@ -44,18 +52,32 @@
 </style>
 </head>
 <body>
-<div id='calendar'></div>
+<div id='calendar'style = "margin-bottom:100px"></div>
 <p></p>
-<div class="row">
-<p><a class="btn btn-danger" href="imaginedragonsprofile" role="button">Back</a></p>
 
 </div>
-    <div class = "navbar navbar-inverse navbar-fixed-bottom">
-               
-                <div class = "container">
-                    <p class = "navbar-text pull-left">&copy;2014 instaCal</p>
-                </div>
-               
-            </div>
+   
 </body>
+
+
+<footer>
+    <div class="footer navbar-fixed-bottom">
+        <div class="container">
+            <div class="btn-group btn-group-justified">
+                 <div class="btn-group">
+                    <a href = "index" class = "btn btn-primary">Feed</a>
+                 </div>
+                  <div class="btn-group">
+                    <a href = "profile" class = "btn btn-primary">Profile</a>
+                  </div>
+                  <div class="btn-group">
+                    <a href = "friends" class = "btn btn-primary">Friends</a>
+                  </div>
+                  <div class="btn-group">
+                    <a href = "settings" class = "btn btn-primary">Settings</a>
+                  </div>
+                </div>
+        </div>
+    </div>
+</footer>
 </html>
