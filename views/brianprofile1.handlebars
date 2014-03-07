@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href = "css/bootstrap.min.css" rel = "stylesheet">
     <link href = "css/styles.css" rel = "stylesheet">
+    <script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src = "js/bootstrap.js"></script>
+
 </head>
 <body>
 
@@ -25,60 +28,47 @@
                 <h5>Bio: Hahaha what, bio? Naa, I'm CS</h5></td>
               </tr>
             </table>
-             <p>
-              <input align="left" type="button pull-left" value="Friends" onclick="return change(this);" class="btn btn-sm btn-success" />
+               <div style="margin-top: 10px"> 
 
-             
+                <p align="left"><button type="button pull-left" id="loading-example-btn" data-loading-text="Loading..." class="btn btn-success">  Add Friend
+                </button>
 
-                <script type="text/javascript">
-                function change( el )
-                {
-                    if ( el.value === "Friends" ){
-                        el.value = "Add Friend";
-                        el.class ="btn btn-default";
-                    }
-                    else{
-                        el.value = "Friends";
-                        el.class ="btn btn-success";
-                    }
-                }
-                </script>
-                <a class="btn btn-warning btn pull-right" href="briancalendar" role="button">Brian's Calendar</a>
-            </p>
-          <div style="margin-top: 10px">            </div>
-  </div>
+         <a class="btn btn-warning btn-lg btn-sm pull-right" href="briancalendar" role="button">Brian's Calendar</a>
+        </p>
+      </div>
 
-</div>
+  
+
+      </div>
+      </div>
 
 <div class = "container" style="margin-bottom: 100px">
 <!-- Nav tabs -->
-<ul class="nav nav-tabs" id = "event_tab">
-  <li class="active">
-    <a href="#comingup" data-toggle="tab">Coming Up</a>
-  </li>
-
-  <li class>
-    <a href="#recent" data-toggle="tab">Recent</a>
-  </li>
-
-</ul>
-
-<!-- Tab panes -->
 <div class="tab-content">
-  <div class="tab-pane active" id="comingup">
-
-            <h5>Wed, March 5, 2014</h5>
-            <p><a href = "event1" target="_blank">Hang out with Dhanuk </a></p>
-            <h5>Sun, March 8, 2014</h5>
-            <p><a href = "event2" target="_blank">Suite goes Curling! </a></p>
-            <p><a href = "event3" target="_blank">Hearthstone Club Meeting </a></p>
-</div>
-
-<div class="tab-content">
-  <div class="tab-pane" id="recent">
 
 
-            <h5>Cogs Group Goes Clubbing on Fri, 28 Feb 2014</h5>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+        <!-- tabs -->
+        <div class="tabbable">
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#one" data-toggle="tab">Coming Up</a></li>
+            <li><a href="#two" data-toggle="tab">Recent</a></li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane active" id="one">
+                       <h5>Fri, 21 March 2014</h5>
+            <p><a href = "event1">Hang out with Dhanuk </a></p>
+            <p><a href = "event2">Suite Bonfire </a></p>
+
+            <h5>Fri, 27 March 2014</h5>
+            <p><a href = "event3">Hearthstone Club Meeting </a></p>
+          </div>
+            <div class="tab-pane" id="two">
+<h5>Cogs Group Goes Clubbing on Fri, 28 Feb 2014</h5>
             <p> notes: "Time to meet the ladies"</p>
      
             <h5>lab on 20/02/2014 </h5>
@@ -87,19 +77,14 @@
             <h5>Hang out with Grant on 2014-02-12 </h5>
             <p> notes: "Gotta make sure not to be late"</p>
 
-
-    </div>
-  </div>
-</div>
-</div>
-
-
-
-
+             </div>
+        </div>
 
 </div>
+</div>
 
-
+</div>
+</div>
 
 
     <div style="margin-top: 10px"> </div>
@@ -118,8 +103,59 @@
 </script>
 
 
+<script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
-
+        <script type='text/javascript' src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/js/bootstrap.min.js"></script>
+        <!-- JavaScript jQuery code from Bootply.com editor  -->
+        
+        <script type='text/javascript'>
+        
+        $(document).ready(function() {
+        
+        });
+        
+        </script>
+        
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+          ga('create', 'UA-40413119-1', 'bootply.com');
+          ga('send', 'pageview');
+        </script>
+        <!-- Quantcast Tag -->
+        <script type="text/javascript">
+        var _qevents = _qevents || [];
+        
+        (function() {
+        var elem = document.createElement('script');
+        elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+        elem.async = true;
+        elem.type = "text/javascript";
+        var scpt = document.getElementsByTagName('script')[0];
+        scpt.parentNode.insertBefore(elem, scpt);
+        })();
+        
+        _qevents.push({
+        qacct:"p-0cXb7ATGU9nz5"
+        });
+        </script>
+ 
+     <script>
+        var fol = false;
+        $('#loading-example-btn').click(function () {
+            var btn = $(this);
+            if(fol === false){
+                btn.text('Request Sent');
+                fol = true;
+            }
+            else{
+                btn.text('Add Friend');
+                fol = false;
+            }
+    })  ;
+        </script>
 
 </body>
 <footer>
