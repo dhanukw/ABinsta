@@ -30,10 +30,10 @@
             </table>
                <div style="margin-top: 10px"> 
 
-                <p align="left"><button type="button pull-left" id="loading-example-btn" data-loading-text="Loading..." class="btn btn-success">  Add Friend
+                <p align="left"><button type="button pull-left" id="loading-example-btn" data-loading-text="Loading..." class="btn btn-success">  Friends
                 </button>
 
-         <a class="btn btn-warning btn-lg btn-sm pull-right" href="briancalendar" role="button">Brian's Calendar</a>
+         <a class="btn btn-warning pull-right" href="briancalendar" role="button">Brian's Calendar</a>
         </p>
       </div>
 
@@ -147,11 +147,11 @@
         $('#loading-example-btn').click(function () {
             var btn = $(this);
             if(fol === false){
-                btn.text('Request Sent');
+                btn.text('Add Friend');
                 fol = true;
             }
             else{
-                btn.text('Add Friend');
+                btn.text('Request Sent');
                 fol = false;
             }
     })  ;
