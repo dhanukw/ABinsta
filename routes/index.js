@@ -148,3 +148,24 @@ exports.event5 = function (req, res) {
 exports.event6 = function (req, res) {
 	res.render('eventM3');
 };
+
+exports.event7 = function (req, res) {
+	res.render('eventG1');
+};
+
+exports.event8 = function (req, res) {
+	res.render('eventG2');
+};
+
+exports.event9 = function (req, res) {
+	res.render('eventG3');
+};
+exports.eventD1 = function (req, res) {
+	res.render('eventB1');
+};
+exports.eventD2 = function (req, res) {
+	res.render('eventB1');
+};
+exports.eventD3 = function (req, res) {
+	res.render('eventB1');
+};
