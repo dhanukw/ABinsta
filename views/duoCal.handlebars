@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>instaCal </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "css/bootstrap.min.css" rel = "stylesheet">
+    <link href = "css/styles.css" rel = "stylesheet">
+    <link href='css/fullcalendar.css' rel='stylesheet' />
+    <link href='css/fullcalendar.print.css' rel='stylesheet' media='print' />
+    <script src='js/jquery.min.js'></script>
+    <script src='js/jquery-ui.custom.min.js'></script>
+    <script src='js/fullcalendar.min.js'></script>
+    <script src = "js/bootstrap.js"></script>
+
+
+    <div class = "navbar navbar-default navbar-static-top" role="navigation" style="margin-top:-40px">
+        <div class = "container">
+
+            <a href = "index" class = "navbar-brand">instaCal</a>
+        </div>
+    </div>
+
+    <style>
+
+    body {
+        margin-top: 40px;
+        text-align: center;
+        font-size: 14px;
+        font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+    }
+
+    #calendar {
+        width: 360px;
+        margin: 0 auto;
+    }
+    </style>
+
+</head>
+
+
+
+<body>
+    <div class= "container" align = "left" style="margin-bottom:15px">
+        <div>
+            <div style = "float: left; display: inline-block; background-color: #1E90FF; padding: 8px; margin-right: 10px">
+                <input type="checkbox" checked="checked" onclick="reloadCal()" name="f1" id="f1">
+                <label for="f1">Social</label>
+            </div>
+
+            <div style = "float: left; display: inline-block; background-color: #00BFFF; padding: 8px; margin-right: 10px">
+                <input type="checkbox" checked="checked" onclick="reloadCal()" name="f2" id="f2">
+                <label for="f2">Work</label>
+            </div>
+
+            <div style = "float: left; display: inline-block; background-color: #20B2AA; padding: 8px; margin-right: 10px">
+                <input type="checkbox" checked="checked" onclick="reloadCal()" name="f3" id="f3">
+                <label for="f3">Volunteering</label>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <div id='calendar'></div>
+
+    <script type = "text/javascript">
+    var source = new Array();
+    source[0] = '/multi_source/brian1';
+    source[1] = '/multi_source/brian2';
+    source[2] = '/multi_source/brian3';
+
+    var newSource = new Array();
+    newSource[0] = source[0];
+    newSource[1] = source[1];
+    newSource[2] = source[2];
+
+    $(document).ready(loadCal);
+
+    function reloadCal() {
+        newSource[0] = $('#f1').is(':checked') ? '/multi_source/brian1' : '';
+        newSource[1] = $('#f2').is(':checked') ? '/multi_source/brian2' : '';
+        newSource[2] = $('#f3').is(':checked') ? '/multi_source/brian3' : '';
+
+        $('#calendar') 
+        .fullCalendar('removeEventSource', source[0])
+        .fullCalendar('removeEventSource', source[1])
+        .fullCalendar('removeEventSource', source[2])
+        .fullCalendar('refecthEvents')
+        .fullCalendar('addEventSource', newSource[0])
+        .fullCalendar('addEventSource', newSource[1])
+        .fullCalendar('addEventSource', newSource[2])
+        .fullCalendar('refetchEvents');
+
+
+        source[0] = newSource[0];
+        source[1] = newSource[1];
+        source[2] = newSource[2];
+
+    }
+
+    function loadCal() {
+        $('#calendar').fullCalendar({
+            eventSources: [
+            source[0],
+            source[1],
+            source[2]
+            ],
+            eventRender: function (event, element){
+                element.attr('href', '#');
+            },
+            eventClick: function(calEvent, jsEvent, view) {
+               window.open('event/' + calEvent.title, calEvent);
+           }
+       });
+    }
+    </script>
+
+
+
+    <p></p>
+    <div class="container" align= "center" style="margin-bottom:75px">
+        <a class="btn btn-success pull-center" align="center-left" href="addevent" role="button">Add Event</a>
+    </div>
+</div>
+
+</body>
+
+<footer>
+    <div class="footer navbar-fixed-bottom" style="margin-top:1005px">
+        <div class="container">
+            <div class="btn-group btn-group-justified">
+                 <div class="btn-group">
+                    <a href = "index" class = "btn btn-primary">Feed</a>
+                 </div>
+                  <div class="btn-group">
+                    <a href = "profile" class = "btn btn-default">Profile</a>
+                  </div>
+                  <div class="btn-group">
+                    <a href = "friends" class = "btn btn-primary">Friends</a>
+                  </div>
+                  <div class="btn-group">
+                    <a href = "settings" class = "btn btn-primary">Settings</a>
+                  </div>
+                </div>
+        </div>
+    </div>
+</footer>
+</html>
