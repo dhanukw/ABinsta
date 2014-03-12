@@ -1,6 +1,12 @@
 {
     "brian1": [
         {
+            "title": "Hang out with Dhanuk",
+            "start": "Fri, 21 Mar 2014 13:00:00 PST",
+            "end": "Fri, 21 Mar 2014 15:30:00 PST",
+            "notes": "So excited!"
+        },
+        {
             "title": "Suite Bonfire",
             "start": "Sun, 23 Mar 2014 18:00:00 PST",
             "end": "Mon, 24 Mar 2014 00:30:00 PST",
@@ -29,6 +35,16 @@
             "start": "2014-03-12 07:21:58 PM",
             "end": "2014-03-12 09:21:58 PM",
             "notes": "Gotta make sure not to be late"
+        },
+        {
+            "title": "Hi",
+            "start": "2014-03-20 08:30:16 PM",
+            "end": "2014-03-27 08:30:16 PM"
+        },
+        {
+            "title": "Hi",
+            "start": "2014-03-20 08:30:38 PM",
+            "end": "2014-03-27 08:30:38 PM"
         }
     ]
 }
