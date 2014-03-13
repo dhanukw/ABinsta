@@ -174,3 +174,7 @@ exports.eventD2 = function (req, res) {
 exports.eventD3 = function (req, res) {
 	res.render('event3');
 };
+
+exports.supremecourt = function (req, res) {
+	res.render('supremecourt');
+};

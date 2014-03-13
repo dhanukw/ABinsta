@@ -34,6 +34,7 @@ app.get('/profile', index.profile);
 app.get('/welcome', index.welcome);
 app.get('/signin', index.signin);
 app.get('/signup', index.signup);
+app.get('/supremecourt', index.supremecourt);
 
 
 app.get('/calendar', index.calendar);
