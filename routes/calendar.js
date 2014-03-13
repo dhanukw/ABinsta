@@ -13,11 +13,13 @@ exports.compare = function(req, res) {
 	var id = req.body.share;
 	var events1;
 	var events2;
+	var num;
 
 	for(i = 0; i < frienddata.friends.length; i++){
 		if(id ==frienddata.friends[i].id){
 			events1 = require("../" + frienddata.friends[i].json1);
 			events2 = require("../" + frienddata.friends[i].json2);
+			num = i;
 
 		}
 		
@@ -25,7 +27,7 @@ exports.compare = function(req, res) {
 	fs.writeFile('compare1.json',JSON.stringify(events1, null, 4), function(){});
 	fs.writeFile('compare2.json',JSON.stringify(events2, null, 4), function(){});
 
-	res.render('duoCal');
+	res.render('duoCal', frienddata.friends[num]);
 }
 
 exports.eventsuccess = function(req, res){
