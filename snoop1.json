@@ -7,11 +7,24 @@
             "notes": "Live at Avalon"
         },
         {
+
             "title": "Blaze it Tour SD",
             "start": "Sat, 22 Mar 2014 7:00 PM",
             "end": "Sat, 22 Mar 2014 11:59 PM",
             "notes": "Live at Fluxx",
             "id": "1"
+            },
+        {
+            "title": "San Diego",
+            "start": "Sun, 22 Mar 2014 21:00:00 PST",
+            "end": "Mon, 23 Mar 2014 01:30:00 PST",
+            "notes": "Performance at Fluxx San Diego"
+        },
+        {
+            "title": "Smoke at a Bonfire",
+            "start": "Sun, 23 Mar 2014 18:00:00 PST",
+            "end": "Mon, 24 Mar 2014 00:30:00 PST",
+            "notes": "420 420 420 420 420"
         },
         {
             "title": "Blaze it Tour Tuscon",
