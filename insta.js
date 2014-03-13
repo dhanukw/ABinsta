@@ -42,6 +42,7 @@ app.get('/grantcalendar', index.grantcalendar);
 app.get('/briancalendar', index.briancalendar);
 app.get('/snoopcalendar', index.snoopcalendar);
 app.get('/imaginedcalendar', index.imaginedcalendar);
+app.get('/compareForm', calendar.compareForm);
 
 app.get('/addevent', index.addevent);
 app.get('/about', index.about);
@@ -71,6 +72,11 @@ app.get('/eventG1', index.event7);
 app.get('/eventG2', index.event8);
 app.get('/eventG3', index.event9);
 
+app.get('/eventS', index.event10);
+
+app.get('/compare1', events.compare1);
+app.get('/compare2', events.compare2);
+
 app.get('/grantprofile', profile.grantprofile);
 app.get('/snoopprofile', profile.snoopprofile);
 app.get('/imaginedragonsprofile', profile.imaginedragonsprofile);
@@ -90,6 +96,8 @@ app.get('/event/:event_title', index.event);
 app.get('/psswdreset', index.psswdreset);
 app.get('/aboutsignedin', index.aboutsignedin);
 app.get('/contactusin', index.contactusin);
+
+app.post('/compare', calendar.compare);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

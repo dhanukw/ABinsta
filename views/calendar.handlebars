@@ -109,8 +109,23 @@
             eventRender: function (event, element){
                 element.attr('href', '#');
             },
-            eventClick: function(calEvent, jsEvent, view) {
-               window.open('event/' + calEvent.title, calEvent);
+            eventClick: function(event) {
+
+                if(event.id=="1"){
+                    window.open("/event1");
+                    return false;
+                }
+                else if(event.id=="2") {
+                    window.open("/event2");
+                    return false;
+                }
+                else if(event.id=="3") {
+                    window.open("/event3");
+                    return false;
+                }
+                else {
+                }
+               
            }
        });
     }
@@ -121,6 +136,7 @@
     <p></p>
     <div class="container" align= "center" style="margin-bottom:75px">
         <a class="btn btn-success pull-center" align="center-left" href="addevent" role="button">Add Event</a>
+        <a class="btn btn-success" href="compareForm" role="button">Compare Calendars</a>
     </div>
 </div>
 <script>

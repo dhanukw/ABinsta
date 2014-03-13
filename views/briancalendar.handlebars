@@ -53,6 +53,7 @@
     }
 
     function loadCal() {
+        
         $('#calendar').fullCalendar({
             eventSources: [
             source[0],
@@ -61,8 +62,22 @@
             eventRender: function (event, element){
                 element.attr('href', '#');
             },
-            eventClick: function(calEvent, jsEvent, view) {
-               alert('Event: '+calEvent.title+'\n\n'+'Start Time: '+calEvent.start+'\n\n'+'End Time: '+calEvent.end+'\n\n'+'Notes: ' +calEvent.notes);
+            eventClick: function(event) {
+            
+                if(event.id=="1"){
+                    window.open("/eventB1");
+                    return false;
+                }
+                else if(event.id=="2") {
+                    window.open("/eventB2");
+                    return false;
+                }
+                else if(event.id=="3") {
+                    window.open("/eventB3");
+                    return false;
+                }
+                else {
+                }
            }
 
        });
@@ -89,12 +104,12 @@
     <div class= "row" style = "margin-left:100px; margin-bottom: 20px">
         <div class= "grid_8">
             <div>
-                <div style = "float: left; display: inline-block; background-color: #1E90FF; padding: 8px; margin-right: 10px">
+                <div style = "float: left; display: inline-block; background-color: red; color: white; padding: 8px; margin-right: 10px">
                     <input type="checkbox" checked="checked" onclick="reloadCal()" name="f1" id="f1">
                         <label for="f1">Social</label>
                 </div>
 
-                <div style = "float: left; display: inline-block; background-color: #00BFFF; padding: 8px; margin-right: 10px">
+                <div style = "float: left; display: inline-block; background-color: blue; color:white; padding: 8px; margin-right: 10px">
                     <input type="checkbox" checked="checked" onclick="reloadCal()" name="f2" id="f2">
                         <label for="f2">Gaming/Clubs</label>
                 </div>

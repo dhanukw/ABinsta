@@ -1,51 +1,47 @@
 {
-    "grant1": [
+    "events": [
         {
             "title": "Monday Shift",
             "start": "Mon, 3 Mar 2014 4:00 PM",
             "end": "Mon, 3 Mar 2014 8:00 PM",
+            "color":"red",
             "notes": "On that cash money grind"
         },
         {
             "title": "Tuesday Shift",
             "start": "Tue, 4 Mar 2014 4:00 PM",
             "end": "Tue, 4 Mar 2014 8:00 PM",
+            "color":"red",
             "notes": "AKA Sleep"
         },
         {
             "title": "Monday Shift",
             "start": "Mon, 10 Mar 2014 4:00 PM",
             "end": "Mon, 10 Mar 2014 8:00 PM",
+            "color":"red",
             "notes": "On that cash money grind"
         },
-        {
-            "title": "Tuesday Shift",
-            "start": "Tue, 18 Mar 2014 4:00 PM",
-            "end": "Tue, 11 Mar 2014 8:00 PM",
-            "notes": "AKA Sleep"
-        },
-        {
-            "title": "Monday Shift",
-            "start": "Mon, 18 Mar 2014 4:00 PM",
-            "end": "Mon, 17 Mar 2014 8:00 PM",
-            "notes": "On that cash money grind"
-        },
+       
         {
             "title": "Tuesday Shift",
             "start": "Tue, 18 Mar 2014 4:00 PM",
             "end": "Tue, 18 Mar 2014 8:00 PM",
-            "notes": "AKA Sleep"
+            "color":"red",
+            "notes": "AKA Sleep",
+            "id":"3"
         },
         {
             "title": "Monday Shift",
             "start": "Mon, 24 Mar 2014 4:00 PM",
             "end": "Mon, 24 Mar 2014 8:00 PM",
+            "color":"red",
             "notes": "On that cash money grind"
         },
         {
             "title": "Tuesday Shift",
             "start": "Tue, 25 Mar 2014 4:00 PM",
             "end": "Tue, 25 Mar 2014 8:00 PM",
+            "color":"red",
             "notes": "AKA Sleep"
         }
     ]

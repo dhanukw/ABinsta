@@ -3,31 +3,37 @@
         {
             "title": "Wednesday Shift",
             "start": "Wed, 19 Mar 2014 03:00:00 PM",
+            "color": "#00BFFF",
             "end": "Wed, 19 Mar 2014 08:30:00 PM"
         },
         {
             "title": "Wednesday Shift",
             "start": "Wed, 26 Mar 2014 03:00:00 PM",
+            "color": "#00BFFF",
             "end": "Wed, 26 Mar 2014 08:30:00 PM"
         },
         {
             "title": "Tuesday Shift",
             "start": "Tue, 18 Mar 2014 03:00:00 PM",
+            "color": "#00BFFF",
             "end": "Tue, 18 Mar 2014 08:30:00 PM"
         },
         {
             "title": "Tuesday Shift",
             "start": "Tue, 25 Mar 2014 03:00:00 PM",
+            "color": "#00BFFF",
             "end": "Tue, 25 Mar 2014 08:30:00 PM"
         },
         {
             "title": "Saturday Shift",
             "start": "Sat, 22 Mar 2014 03:00:00 PM",
+            "color": "#00BFFF",
             "end": "Sat, 22 Mar 2014 08:30:00 PM"
         },
         {
             "title": "Monday shift",
             "start": "2014-03-10 07:25:29 PM",
+            "color": "#00BFFF",
             "end": "2014-03-10 10:25:29 PM"
         }
     ]

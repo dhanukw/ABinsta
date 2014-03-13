@@ -4,29 +4,29 @@
             "title": "Hanging out at The Village",
             "start": "Fri, 7 Mar 2014 13:00:00 PST",
             "end": "Fri, 7 Mar 2014 15:30:00 PST",
-            "color":"red",
+            "color": "red",
             "notes": "Like Grant! Boom"
         },
         {
             "title": "Suite Picnic!",
             "start": "Sat, 8 Mar 2014 01:00:00 PM",
             "end": "Tue, 8 Mar 2014 04:00:00 PM",
-            "color":"red",
+            "color": "red",
             "notes": "I LOVE sandwiches"
         },
         {
             "title": "Drinking water",
             "start": "19 Mar 2014 4:00 PM",
             "end": "19 Mar 2014 6:30 PM",
-            "color":"red",
+            "color": "red",
             "notes": "Everyone does it",
-            "id":"3"
+            "id": "3"
         },
         {
             "title": "Cogs Group Goes Clubbing",
             "start": "Fri, 21 Mar 2014 20:00:00 PST",
             "end": "Sat, 22 Mar 2014 02:30:00 PST",
-            "color":"red",
+            "color": "red",
             "notes": "Wouldn't be caught dead with this group"
         }
     ]

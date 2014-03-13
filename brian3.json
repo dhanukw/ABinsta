@@ -1,34 +1,29 @@
 {
     "brian3": [
         {
-            "title": "Volunteering",
+            "title": "Habitat For Humanity",
             "start": "Thu, 20 Mar 2014 10:00:00 AM",
-            "end": "Thu, 20 Mar 2014 03:30:00 PM"
+            "end": "Thu, 20 Mar 2014 03:30:00 PM",
+            "color":"#20B2AA",
+            "id": "3"
         },
         {
             "title": "Volunteering",
             "start": "Sat, 22 Mar 2014 10:00:00 AM",
+            "color":"#20B2AA",
             "end": "Sat, 22 Mar 2014 03:30:00 PM"
         },
         {
             "title": "I love saving the fish",
             "start": "2014-03-02 09:43:04 PM",
+            "color":"#20B2AA",
             "end": "2014-03-05 09:43:04 PM"
         },
         {
             "title": "Volunteer",
             "start": "2014-03-12 02:24:34 PM",
+            "color":"#20B2AA",
             "end": "2014-03-12 04:24:34 PM"
-        },
-        {
-            "title": "Make Sweet Sweet Love",
-            "start": "2014-03-21 08:15:13 PM",
-            "end": "2014-03-22 08:17:13 PM"
-        },
-        {
-            "title": "Make Sweet Sweet Love",
-            "start": "2014-03-05 08:15:13 PM",
-            "end": "2014-03-05 08:17:13 PM"
         }
     ]
 }

@@ -1,34 +1,35 @@
 {
     "snoop1": [
         {
-            "title": "Smoke the Reefer",
-            "start": "Fri, 21 Mar 2014 13:00:00 PST",
-            "end": "Fri, 21 Mar 2014 15:30:00 PST",
-            "notes": "420 420 420 420 420"
+            "title": "Blaze it Tour LA",
+            "start": "Fri, 21 Mar 2014 7:00 PM",
+            "end": "Fri, 21 Mar 2014 12:00 AM",
+            "notes": "Live at Avalon"
         },
         {
-            "title": "Smoke at a Bonfire",
-            "start": "Sun, 23 Mar 2014 18:00:00 PST",
-            "end": "Mon, 24 Mar 2014 00:30:00 PST",
-            "notes": "420 420 420 420 420"
+            "title": "Blaze it Tour SD",
+            "start": "Sat, 22 Mar 2014 7:00 PM",
+            "end": "Sat, 22 Mar 2014 11:59 PM",
+            "notes": "Live at Fluxx",
+            "id": "1"
         },
         {
-            "title": "Rhastafarian Club Meeting",
-            "start": "27 Mar 2014 17:00:00 PST",
-            "end": "27 Mar 2014 6:30 PM",
-            "notes": "420 420 420 420 420"
+            "title": "Blaze it Tour Tuscon",
+            "start": "Mon, 24 Mar 2014 7:00 PM",
+            "end": "Fri, 24 Mar 2014 12:00 AM",
+            "notes": "Live at Club Congress"
         },
         {
-            "title": "Baking some marijuana edibles",
-            "start": "Fri, 28 Mar 2014 20:00:00 PST",
-            "end": "Sat, 29 Mar 2014 02:30:00 PST",
-            "notes": "420 420 420 420 420"
+            "title": "Blaze it Tour Dallas",
+            "start": "Wed, 26 Mar 2014 7:00 PM",
+            "end": "Wed, 26 Mar 2014 12:00 AM",
+            "notes": "Snoop D'O'dubs"
         },
         {
-            "title": "High this entire time",
-            "start": "10/03/2014 09:23:51 PM",
-            "end": "15/03/2014 10:23:51 PM",
-            "notes": "420 420 420 420 420"
+            "title": "Blaze it Tour Houston",
+            "start": "Thur, 27 Mar 2014 7:00 PM",
+            "end": "Thur, 27 Mar 2014 12:00 AM",
+            "notes": "Snoop D'O'dubs"
         }
     ]
 }

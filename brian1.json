@@ -4,47 +4,45 @@
             "title": "Hang out with Dhanuk",
             "start": "Fri, 21 Mar 2014 13:00:00 PST",
             "end": "Fri, 21 Mar 2014 15:30:00 PST",
+            "color": "#1E90FF",
             "notes": "So excited!"
         },
         {
             "title": "Suite Bonfire",
             "start": "Sun, 23 Mar 2014 18:00:00 PST",
             "end": "Mon, 24 Mar 2014 00:30:00 PST",
-            "notes": "Gettin' read to drink up"
+            "notes": "Gettin' read to drink up",
+            "color": "#1E90FF",
+            "id": "1"
         },
         {
             "title": "Hearthstone Club Meeting",
             "start": "27 Mar 2014 17:00:00 PST",
             "end": "27 Mar 2014 6:30 PM",
+            "color": "#1E90FF",
             "notes": "Gonna be fun!"
         },
         {
             "title": "Cogs Group Goes Clubbing",
             "start": "Fri, 28 Mar 2014 20:00:00 PST",
             "end": "Sat, 29 Mar 2014 02:30:00 PST",
+            "color": "#1E90FF",
             "notes": "Time to meet the ladies"
         },
         {
-            "title": "lab",
-            "start": "20/03/2014 09:23:51 PM",
-            "end": "20/03/2014 10:23:51 PM",
-            "notes": "Fun.."
+            "title": "Tennis",
+            "start": "Sun, 23 Mar 2014 1:00 PM",
+            "end": "Sun, 23 Mar 2014 5:00 PM",
+            "color": "#1E90FF",
+            "notes": "Fun..",
+            "id": "2"
         },
         {
             "title": "Hang out with Grant",
             "start": "2014-03-12 07:21:58 PM",
             "end": "2014-03-12 09:21:58 PM",
+            "color": "#1E90FF",
             "notes": "Gotta make sure not to be late"
-        },
-        {
-            "title": "Hi",
-            "start": "2014-03-20 08:30:16 PM",
-            "end": "2014-03-27 08:30:16 PM"
-        },
-        {
-            "title": "Hi",
-            "start": "2014-03-20 08:30:38 PM",
-            "end": "2014-03-27 08:30:38 PM"
         }
     ]
 }

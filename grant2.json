@@ -1,27 +1,33 @@
 {
-    "grant2": [
+    "events": [
         {
             "title": "Swimming with GF",
-            "start": "Wed, 19 Mar 2014 2:00 PM",
-            "end": "Wed, 19 Mar 2014  PST 3:30 PM",
-            "notes": "I suck at swimming"
+            "start": "Sat, 15 Mar 2014 2:00 PM",
+            "end": "Sat, 15 Mar 2014  PST 3:30 PM",
+            "notes": "I suck at swimming",
+            "color":"blue",
+            "id":"2"
         },
         {
             "title": "Hang out with Dhanuk",
             "start": "Wed, 19 Mar 2014 13:00:00 PST",
             "end": "Wed, 19 Mar 2014 15:30:00 PST",
-            "notes": "Probably not gonna LOL"
+            "notes": "Probably not gonna LOL",
+            "color":"blue",
+            "id":"1"
         },
         {
             "title": "Swimming with GF",
             "start": "Fri, 21 Mar 2014 2:00 PM",
             "end": "Fri, 21 Mar 2014  PST 3:30 PM",
+            "color":"blue",
             "notes": "I suck at swimming"
         },
         {
             "title": "Swimming with GF",
             "start": "Fri, 27 Mar 2014 2:00 PM",
             "end": "Fri, 27 Mar 2014  PST 3:30 PM",
+            "color":"blue",
             "notes": "I suck at swimming"
         }
     ]

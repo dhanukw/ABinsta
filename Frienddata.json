@@ -2,25 +2,34 @@
 	"friends": [
 		{
 			"name": "Melissa Cameron",
+			"id":"1",
 			"description": "UCSD '14 La Jolla CA",
 			"imageURL": "images/imgres.jpg",
 			"Filters": "Social, Cogs TA'ing",
-			"profileURL": "/melissaprofile"
+			"profileURL": "/melissaprofile",
+			"json1": "melissa1.json",
+			"json2": "melissa2.json"
 
 		},
 		{
 			"name": "Brian Clark",
+			"id": "2",
 			"description": "UCSD '16 La Jolla CA",
 			"imageURL": "https://scontent-a-pao.xx.fbcdn.net/hphotos-ash2/t1/1001296_4304329546053_621296507_n.jpg",
 			"Filters": "Social, Gaming/Clubs",
-			"profileURL": "/brianprofile"
+			"profileURL": "/brianprofile",
+			"json1": "dhanuk1.json",
+			"json2": "dhanuk2.json"
 		},
 		{
 			"name": "Grant Wiesnoski",
+			"id": "3",
 			"description": "UCSD '15 La Jolla CA",
 			"imageURL": "https://scontent-a-pao.xx.fbcdn.net/hphotos-prn1/t1/12153_10202328033435552_1185023390_n.jpg",
 			"Filters": "Work, Fun",
-			"profileURL": "/grantprofile"
+			"profileURL": "/grantprofile",
+			"json1": "grant1.json",
+			"json2": "grant2.json"
 		},
 		{
 			"name": "Snoop Dogg",

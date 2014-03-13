@@ -5,36 +5,36 @@
             "start": "Tue, 18 Mar 2014 13:00:00 PST",
             "end": "Tue, 18 Mar 2014 15:00:00 PST",
             "notes": "I am a generous god",
-            "color":"blue",
-            "id":"1"
+            "color": "blue",
+            "id": "1"
         },
         {
             "title": "Cogs 120 Presentations",
             "start": "Fri, 14 Mar 2014 12:20:00 PM",
             "end": "Fri, 14 Mar 2014 01:30:00 PM",
             "notes": "Time to see amazing web apps!",
-            "color":"blue",
-            "id":"2"
+            "color": "blue",
+            "id": "2"
         },
         {
             "title": "Cogs Office Hours",
             "start": "Tue, 11 Mar 2014 13:00:00 PST",
             "end": "Tue, 11 Mar 2014 15:00:00 PST",
-            "color":"blue",
+            "color": "blue",
             "notes": "I am a generous god"
         },
         {
             "title": "Cogs Office Hours",
             "start": "Tue, 25 Mar 2014 13:00:00 PST",
             "end": "Tue, 25 Mar 2014 15:00:00 PST",
-            "color":"blue",
+            "color": "blue",
             "notes": "I am a generous god"
         },
         {
             "title": "Studio Time!",
             "start": "Fri, 28 Mar 2014 12:20:00 PM",
             "end": "Fri, 28 Mar 2014 01:30:00 PM",
-            "color":"blue",
+            "color": "blue",
             "notes": "Time to see amazing web apps!"
         }
     ]

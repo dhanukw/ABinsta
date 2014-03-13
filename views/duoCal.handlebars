@@ -41,71 +41,35 @@
 
 
 <body>
-    <div class= "container" align = "left" style="margin-bottom:15px">
-        <div>
-            <div style = "float: left; display: inline-block; background-color: #1E90FF; padding: 8px; margin-right: 10px">
-                <input type="checkbox" checked="checked" onclick="reloadCal()" name="f1" id="f1">
-                <label for="f1">Social</label>
-            </div>
-
-            <div style = "float: left; display: inline-block; background-color: #00BFFF; padding: 8px; margin-right: 10px">
-                <input type="checkbox" checked="checked" onclick="reloadCal()" name="f2" id="f2">
-                <label for="f2">Work</label>
-            </div>
-
-            <div style = "float: left; display: inline-block; background-color: #20B2AA; padding: 8px; margin-right: 10px">
-                <input type="checkbox" checked="checked" onclick="reloadCal()" name="f3" id="f3">
-                <label for="f3">Volunteering</label>
-            </div>
-        </div>
-
-        
-    </div>
+    
 
     <div id='calendar'></div>
 
     <script type = "text/javascript">
+   
+    $(document).ready(loadCal);
+
+
+    function loadCal() {
+
     var source = new Array();
     source[0] = '/multi_source/brian1';
     source[1] = '/multi_source/brian2';
     source[2] = '/multi_source/brian3';
 
-    var newSource = new Array();
-    newSource[0] = source[0];
-    newSource[1] = source[1];
-    newSource[2] = source[2];
+    var compareSource = new Array();
+    compareSource[0] = 'compare1';
+    compareSource[1] = 'compare2';
 
-    $(document).ready(loadCal);
-
-    function reloadCal() {
-        newSource[0] = $('#f1').is(':checked') ? '/multi_source/brian1' : '';
-        newSource[1] = $('#f2').is(':checked') ? '/multi_source/brian2' : '';
-        newSource[2] = $('#f3').is(':checked') ? '/multi_source/brian3' : '';
-
-        $('#calendar') 
-        .fullCalendar('removeEventSource', source[0])
-        .fullCalendar('removeEventSource', source[1])
-        .fullCalendar('removeEventSource', source[2])
-        .fullCalendar('refecthEvents')
-        .fullCalendar('addEventSource', newSource[0])
-        .fullCalendar('addEventSource', newSource[1])
-        .fullCalendar('addEventSource', newSource[2])
-        .fullCalendar('refetchEvents');
-
-
-        source[0] = newSource[0];
-        source[1] = newSource[1];
-        source[2] = newSource[2];
-
-    }
-
-    function loadCal() {
         $('#calendar').fullCalendar({
             eventSources: [
             source[0],
             source[1],
-            source[2]
+            source[2],
+            compareSource[0],
+            compareSource[1]
             ],
+
             eventRender: function (event, element){
                 element.attr('href', '#');
             },
@@ -120,7 +84,6 @@
 
     <p></p>
     <div class="container" align= "center" style="margin-bottom:75px">
-        <a class="btn btn-success pull-center" align="center-left" href="addevent" role="button">Add Event</a>
     </div>
 </div>
 

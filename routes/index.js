@@ -160,12 +160,17 @@ exports.event8 = function (req, res) {
 exports.event9 = function (req, res) {
 	res.render('eventG3');
 };
+
+exports.event10 = function (req, res) {
+	res.render('eventS');
+};
+
 exports.eventD1 = function (req, res) {
-	res.render('eventB1');
+	res.render('event1');
 };
 exports.eventD2 = function (req, res) {
-	res.render('eventB1');
+	res.render('event2');
 };
 exports.eventD3 = function (req, res) {
-	res.render('eventB1');
+	res.render('event3');
 };
