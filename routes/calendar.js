@@ -27,8 +27,8 @@ exports.compare = function(req, res) {
 	fs.writeFile('compare1.json',JSON.stringify(events1, null, 4), function(){});
 	fs.writeFile('compare2.json',JSON.stringify(events2, null, 4), function(){});
 
-	res.render('duoCal', frienddata.friends[num]);
-}
+	res.render('duoCal');
+};
 
 exports.eventsuccess = function(req, res){
 
