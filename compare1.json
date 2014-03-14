@@ -1,3 +1,35 @@
 {
+     "events": [
+        {
+            "title": "Hang out with Dhanuk",
+            "start": "Wed, 5 Mar 2014 13:00:00 PST",
+            "end": "Wed, 5 Mar 2014 15:30:00 PST",
+            "notes": "Probably not gonna LOL",
+            "color":"red",
+            "id": "1"
+        },
+        {
+            "title": "Suite goes Curling!!",
+            "start": "8 Mar 2014 1:00 PM",
+            "end": "8 Mar 2014 4:00 PM",
+            "notes": "Time to channel our inner Canadian!",
+            "color":"red",
+            "id":"2"
+        },
+        {
+            "title": "Watcing the oscars",
+            "start": "2 Mar 2014 7:00 PM",
+            "end": "2 Mar 2014 9:00 PM",
+            "color":"red",
+            "notes": "You got this LEO!!"
+        },
+        {
+            "title": "Getting Pi",
+            "start": "14 Mar 2014 6:00 PM",
+            "end": "14 Mar 2014 8:00 PM",
+            "color":"red",
+            "notes" : "what?"
+        }
+    ]
     
 }
